@@ -315,8 +315,8 @@ BOOL DirectSoundDriver::Initialize() {
 
 	wfm.wFormatTag = WAVE_FORMAT_PCM;
 	wfm.nChannels = 2;
-	wfm.nSamplesPerSec = 44100;
-	wfm.wBitsPerSample = 16;
+	wfm.nSamplesPerSec = Configuration::getFrequency();
+	wfm.wBitsPerSample = Configuration::getBitRate();
 	wfm.nBlockAlign = wfm.wBitsPerSample / 8 * wfm.nChannels;
 	wfm.nAvgBytesPerSec = wfm.nSamplesPerSec * wfm.nBlockAlign;
 
