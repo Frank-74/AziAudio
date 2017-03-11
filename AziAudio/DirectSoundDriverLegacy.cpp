@@ -375,7 +375,7 @@ BOOL DirectSoundDriverLegacy::Initialize() {
 	HRESULT             hr;
 
 	DeInitialize(); // Release just in case...
-	//SampleRate = 0; // -- Disabled due to reset bug
+	SampleRate = 0; // -- Disabled due to reset bug
 
 	DEBUG_OUTPUT("DS8L: Initialize()\n");
 	hMutex = CreateMutex(NULL, FALSE, NULL);
