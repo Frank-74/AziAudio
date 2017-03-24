@@ -234,7 +234,6 @@ DWORD WINAPI XAudio2SoundDriver::AudioThreadProc(LPVOID lpParameter)
 				g_source->GetState(&xvs);
 			}
 		}
-		Sleep(1);
 	}
 	return 0;
 }
