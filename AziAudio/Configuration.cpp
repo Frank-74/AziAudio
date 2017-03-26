@@ -110,8 +110,8 @@ void Configuration::LoadDefaults()
 	configFrequency = 44100; // Not implemented -- needs testing
 	configBitRate   = 16;    // Not implemented -- needs testing
 	configBufferLevel = 2;  // NewAudio only - How many frames to buffer
-	configBufferFPS = 96;   // NewAudio only - How much data to frame per second
-	configBackendFPS = 96;  // NewAudio only - How much data to frame per second
+	configBufferFPS = 95;   // NewAudio only - How much data to frame per second
+	configBackendFPS = 95;  // NewAudio only - How much data to frame per second
 	LoadSettings();	
 }
 #ifdef _WIN32
