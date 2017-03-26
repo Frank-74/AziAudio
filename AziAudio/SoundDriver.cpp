@@ -15,7 +15,7 @@
 void SoundDriver::AI_LenChanged(u8 *start, u32 length)
 {
 	// Bleed off some of this buffer to smooth out audio
-	if (length < m_MaxBufferSize && Configuration::getSyncAudio() == true)
+	if (Configuration::getSyncAudio() == true)
 	{
 		while ((m_BufferRemaining) == m_MaxBufferSize)// ((m_MaxBufferSize / 3) * 2))
 		{
